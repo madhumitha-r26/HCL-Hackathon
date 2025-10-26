@@ -10,8 +10,6 @@ SmartBank - Modular Banking Backend System is a simple banking web application b
 
 - Password Reset: Allows users to securely reset forgotten passwords.
 
-- Money Transfer: Simulates money transfers between customer accounts.
-
 - Admin Dashboard: Admins can view all customer records.
 
 - Session Management: Uses Flask session for login persistence.
