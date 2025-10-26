@@ -1,0 +1,63 @@
+body{
+     background-color: #bef1fa;
+}
+
+.navbar, footer{
+       background-color:#8fe8f8;
+}
+
+.card{
+    border:none
+}
+
+.navbar-toggler, .navbar-toggler:focus{
+    border:none;
+}
+
+.__redirect{
+    text-decoration: none;
+}
+
+.__redirect:hover{
+    text-decoration: underline;
+}
+
+.fp{
+  color: gray;
+  text-decoration: none;
+}
+
+.fp:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.col .card{
+  width:50%
+}
+
+section {
+  height: auto;
+  width: 100%;
+}
+
+#home {
+  background: url("bank_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 95vh;
+  position: relative;
+}
+
+.hero__section_container {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  color: white;
+}
+
+.hero__section_title {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+

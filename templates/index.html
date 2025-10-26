@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{url_for('static',filename='smart_bank.png')}}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+    />
+    <title>Smart Bank</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg shadow-sm">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand fw-medium" href="{{ url_for('index') }}">
+      <img
+        src="{{ url_for('static', filename='smart_bank.png') }}"
+        alt="Logo"
+        width="50"
+        height="45"
+        class="d-inline-block align-text-top me-2"
+      />
+      SmartBank
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+         <span id="navbar-hamburger">
+            <i class="fa fa-bars" style="color: rgb(0, 105, 210)"></i>
+          </span>
+          <span id="navbar-close" style="display: none">
+            <i class="fa fa-close" style="color:rgb(0, 105, 210)"></i>
+          </span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+ <section id="home">
+      <div class="hero__section_container">
+        <h1 class="hero__section_title display-2 fw-bold text-center">SmartBank</h1>
+        <p class="hero__section_title display-5 fst-italic text-center"><q>Where Finance Meets Innovation</q></p>
+    </div>
+</section>
+
+
+      <footer>
+      <div class="container-fluid text-center">
+        <p class="fs-5 fw-medium">
+          Copyright <span class="fs-4">©</span> 2025 All rights reserved.
+          Smart Bank
+        </p>
+      </div>
+    </footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+  </body>
+
+</html>
