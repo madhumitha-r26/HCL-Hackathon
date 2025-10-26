@@ -266,6 +266,7 @@ def update_profile():
         dob = request.form.get('dob')
         phone_number = request.form.get('phone_number')
         email = request.form.get('email')
+        amount = request.form.get('amount')
         
         # Validate required fields
         if not all([username, dob, phone_number, email]):
@@ -285,7 +286,7 @@ def update_profile():
             # Update user information
             cur.execute('''
                 UPDATE customers 
-                SET username = %s, dob = %s, phone_number = %s, email = %s 
+                SET username = %s, dob = %s, phone_number = %s, email = %s amount= %s
                 WHERE email = %s
             ''', (username, dob, phone_number, email, session['email']))
             
