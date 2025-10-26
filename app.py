@@ -341,8 +341,6 @@ def delete_account():
     
     return render_template('delete_account.html')
 
-@app.route('/transfer_amonut', methods=['GET', 'POST'])
-def transfer_amount():
     if not session.get('loggedin'):
         flash('Please login to transfer amount', 'warning')
         return redirect(url_for('login'))

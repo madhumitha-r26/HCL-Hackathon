@@ -68,11 +68,9 @@
     <h6 class="fw-semibold">PAN Number: {{ user.pan_number }}</h6>
     <h6 class="fw-semibold">Phone: {{ user.phone_number }}</h6>
     <h6 class="fw-semibold">Email: {{ user.email }}</h6> 
-    <h6 class="fw-semibold">Amount: {{ user.amount}}</h6> 
+    <h6 class="fw-semibold">Savings: {{ user.amount}}</h6> 
     <br>
     <div class="d-grid gap-2">
-
-        <a href="{{ url_for('transfer_amount') }}" class="btn btn-success">Transfer Amount</a>
         <a href="{{ url_for('update_profile') }}" class="btn btn-primary">Update Profile</a>
         <a href="{{ url_for('delete_account') }}" class="btn btn-danger">Delete Account</a>
         
